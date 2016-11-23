@@ -27,7 +27,6 @@ str = str.replace(/(\r\n|\n|\r|\s)/gm,"");
 str = str.replace("-----BEGINHASH-----","");
 str = str.replace("-----ENDHASH-----","");
 
-
 var sha512str = sha512(newstr);
 
 $.ajax({url: "https://ringzer0team.com/challenges/13/"+sha512str, success: function(result){
